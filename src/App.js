@@ -3,12 +3,14 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import CardList from "./components/cardsCollection/cardList.component";
 import Pagination from "./components/pagination/pagination.component";
+import SearchField from "./components/search/searchfield.component";
 
 function App() {
   const [enye, setEnye] = useState([]);
   const [size, setSize] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
   const [pageLimit, setPageLimit] = useState(20);
+  const [searchfield, updateSearchfield] = useState("");
 
   useEffect(() => {
     fetch("https://api.enye.tech/v1/challenge/records")
@@ -25,20 +27,41 @@ function App() {
 
   console.log(enye.map((jj) => jj.FirstName));
   // console.log(size);
+  // console.log(searchfield);
+  const anotherArray = [...enye];
+  // setDuplicate(anotherArray);
+  // console.log(duplicate);
 
   const indexOfLastPost = currentPage * pageLimit;
   const indexOfFirstPost = indexOfLastPost - pageLimit;
-  const currentPosts = enye.slice(indexOfFirstPost, indexOfLastPost);
+  let currentPosts = enye.slice(indexOfFirstPost, indexOfLastPost);
+  // currentPosts = [1, 2, 3];
   console.log(currentPosts);
   console.log(indexOfLastPost);
   console.log(currentPage);
 
-  // const paginate = (pageNumber) => setCurrentPage(pageNumber);
+  const filteredProfiles = anotherArray.filter((profile) =>
+    profile.FirstName.toLowerCase().includes(searchfield.toLowerCase())
+  );
+  // setEnye(filteredProfiles);
+  console.log(filteredProfiles);
+  currentPosts = filteredProfiles.slice(indexOfFirstPost, indexOfLastPost);
+
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
     <div className="App">
+      <SearchField
+        anotherArray={anotherArray}
+        updateSearchfield={updateSearchfield}
+      />
       <CardList itemArray={currentPosts} />
-      <Pagination size={size} pageLimit={pageLimit} />
+      <Pagination
+        size={size}
+        pageLimit={pageLimit}
+        paginate={paginate}
+        currentPage={currentPage}
+      />
       READY!!! yaah
     </div>
   );

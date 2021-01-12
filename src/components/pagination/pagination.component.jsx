@@ -47,7 +47,7 @@
 import React from "react";
 import "./pagination.styles.css";
 
-const Pagination = ({ pageLimit, size, paginate }) => {
+const Pagination = ({ pageLimit, size, paginate, currentPage }) => {
   const pageNumbers = [];
   const averagePost = Math.ceil(size / pageLimit);
   for (let i = 1; i < averagePost + 1; i++) {
@@ -59,11 +59,28 @@ const Pagination = ({ pageLimit, size, paginate }) => {
   return (
     // <div className="pagination-container">
     <nav className="paginated">
+      {currentPage > 1 ? (
+        <li className="prev" onClick={() => paginate(currentPage - 1)}>
+          PREV
+        </li>
+      ) : (
+        ""
+      )}
       {pageNumbers.map((num) => (
         <li key={num} className="page-link">
-          <a href="!#">{num}</a>
+          <a onClick={() => paginate(num)} href="!#">
+            {num}
+          </a>
         </li>
       ))}
+
+      {currentPage < averagePost ? (
+        <li className="prev" onClick={() => paginate(currentPage + 1)}>
+          NEXT
+        </li>
+      ) : (
+        ""
+      )}
     </nav>
     // </div>
   );
