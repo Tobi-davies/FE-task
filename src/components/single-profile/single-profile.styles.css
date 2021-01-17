@@ -1,0 +1,30 @@
+.single-profile {
+  background: hsl(207, 26%, 17%);
+  height: 90vh;
+  padding-top: 20px;
+}
+.singlecard {
+  background: #fff;
+  /* border: 2px solid green; */
+  width: 60%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+.singlecard p {
+  display: flex;
+  margin-bottom: 5px;
+}
+.singlecard p .first {
+  width: 50%;
+}
+.back {
+  padding: 10px;
+  background: #fff;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}

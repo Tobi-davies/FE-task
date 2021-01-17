@@ -5,25 +5,32 @@
 
 .paginated {
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   align-items: center;
 }
 
 .page-link a {
-  border: 1px solid black;
+  border: 3px solid #1a3873;
   padding: 5px 10px;
   margin: 2px;
+  color: #1a3873;
+  border-radius: 50%;
   color: black;
 }
 .page-link a:focus,
+.page-link a:active,
 .prev:focus {
-  border: 1px solid red;
+  border: 3px solid #d92546;
 }
 .prev {
-  border: 1px solid black;
+  border: 3px solid #1a3873;
   padding: 5px 10px;
   margin: 2px;
   color: black;
   cursor: pointer;
+  border-radius: 10px;
+}
+.prev:focus,
+.prev:active {
+  border: 3px solid #d92546;
 }

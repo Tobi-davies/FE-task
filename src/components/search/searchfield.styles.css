@@ -1,0 +1,17 @@
+.search-field {
+  display: flex;
+  flex-direction: column;
+  /* background: hsl(207, 26%, 17%); */
+}
+.search-field .search {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.search-field input {
+  height: 40px;
+  font-size: 1.3rem;
+  width: 200px;
+  margin-right: 60px;
+  padding: 0 5px;
+}

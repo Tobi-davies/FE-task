@@ -1,14 +1,7 @@
 import React from "react";
+import "./searchfield.styles.css";
 
 const SearchField = ({ updateSearchfield }) => {
-  // const [searchfield, updateSearchfield] = useState("");
-
-  // const filteredProfiles = anotherArray.filter((profile) =>
-  //   profile.FirstName.toLowerCase().includes(searchfield.toLowerCase())
-  // );
-  // setDuplicate(7);
-  // console.log(filteredProfiles);
-
   const inputHandler = (e) => {
     // onChange={e => ({ searchField: e.target.value})
     console.log(e.target.value);
@@ -17,6 +10,7 @@ const SearchField = ({ updateSearchfield }) => {
 
   return (
     <div className="search-field">
+      <div className="search">Search</div>
       <input type="text" onChange={inputHandler} id="" />
     </div>
   );

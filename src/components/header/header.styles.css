@@ -1,0 +1,21 @@
+.header {
+  background: hsl(207, 26%, 17%);
+  padding: 10px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: auto;
+}
+.header-container h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.header-container .number {
+  font-size: 1.2rem;
+  color: #fff;
+}
