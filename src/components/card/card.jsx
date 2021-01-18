@@ -9,7 +9,7 @@ const Card = ({ post, addProfile, history }) => {
   return (
     <div className="card">
       <p className="name">
-        <span className="first"> Name :</span>{" "}
+        <span className="first"> Name :</span>
         <span className="second">
           {post.FirstName} {post.LastName}
         </span>
@@ -19,7 +19,7 @@ const Card = ({ post, addProfile, history }) => {
         <span className="second">{post.Email}</span>
       </p>
       <p className="gender">
-        <span className="first">Gender: </span>{" "}
+        <span className="first">Gender: </span>
         <span className="second">{post.Gender}</span>
       </p>
       <p className="payment">

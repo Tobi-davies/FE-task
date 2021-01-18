@@ -1,7 +1,6 @@
 .filter-field {
   display: flex;
   flex-direction: column;
-  /* background: hsl(207, 26%, 17%); */
 }
 .filter-field-container {
   display: flex;
@@ -13,7 +12,6 @@
 .filter-field-container select {
   height: 40px;
   font-size: 0.9rem;
-
   width: 140px;
   margin-right: 5px;
 }
