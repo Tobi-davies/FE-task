@@ -15,7 +15,7 @@ const FilterField = ({ setGender, setPayment }) => {
       <p>Filter</p>
       <div className="filter-field-container">
         <div className="gender-field">
-          <select onChange={genderHandler} name="Gender" id="">
+          <select onChange={genderHandler} name="Gender">
             <option value="" disabled selected hidden>
               Gender
             </option>

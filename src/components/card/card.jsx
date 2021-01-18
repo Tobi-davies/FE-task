@@ -36,9 +36,9 @@ const Card = ({ post, addProfile, history }) => {
           history.push("/singleprofile");
         }}
       >
-        View Profile Details <i class="fas fa-chevron-right"></i>{" "}
-        <i class="fas fa-chevron-right"></i>{" "}
-        <i class="fas fa-chevron-right"></i>
+        View Profile Details <i className="fas fa-chevron-right"></i>{" "}
+        <i className="fas fa-chevron-right"></i>{" "}
+        <i className="fas fa-chevron-right"></i>
       </button>
     </div>
   );
