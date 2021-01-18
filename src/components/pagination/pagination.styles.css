@@ -6,7 +6,7 @@
 }
 
 .page-link {
-  border: 3px solid #1a3873;
+  border: 3px solid  hsl(207, 26%, 17%);
   padding: 5px 10px;
   margin: 2px;
   color: #1a3873;
@@ -20,7 +20,7 @@
   border: 3px solid #d92546;
 }
 .prev {
-  border: 3px solid #1a3873;
+  border: 3px solid  hsl(207, 26%, 17%);
   padding: 5px 10px;
   margin: 2px;
   color: black;

@@ -70,43 +70,14 @@ const SingleProfile = ({ profile }) => {
             <span className="first">MacAddress:</span>
             <span className="second">{profile.MacAddress}</span>
           </p>
-          {/* <p>
-            <span className="first">CreditCardType:</span>
-            <span className="second">{profile.CreditCardType}</span>
+           <p>
+            <span className="first">Latitude:</span>
+            <span className="second">{profile.Latitude}</span>
           </p>
           <p>
-            <span className="first">CreditCardType:</span>
-            <span className="second">{profile.CreditCardType}</span>
+            <span className="first">Longitude:</span>
+            <span className="second">{profile.Longitude}</span>
           </p>
-          <p>
-            <span className="first">CreditCardType:</span>
-            <span className="second">{profile.CreditCardType}</span>
-          </p>
-         
-          <p>
-            <span className="first">CreditCardType:</span>
-            <span className="second">{profile.CreditCardType}</span>
-          </p>
-          <p>
-            <span className="first">CreditCardType:</span>
-            <span className="second">{profile.CreditCardType}</span>
-          </p>
-          <p>
-            <span className="first">CreditCardType:</span>
-            <span className="second">{profile.CreditCardType}</span>
-          </p>
-          <p>
-            <span className="first">CreditCardType:</span>
-            <span className="second">{profile.CreditCardType}</span>
-          </p>
-          <p>
-            <span className="first">CreditCardType:</span>
-            <span className="second">{profile.CreditCardType}</span>
-          </p>
-          <p>
-            <span className="first">CreditCardType:</span>
-            <span className="second">{profile.CreditCardType}</span>
-          </p> */}
         </div>
       </div>
     );
@@ -119,4 +90,3 @@ const mapStateToProps = (state) => ({
 
 export default connect(mapStateToProps)(SingleProfile);
 
-// export default SingleProfile;
