@@ -47,11 +47,11 @@ const SingleProfile = ({ profile }) => {
             <span className="second">{profile.PaymentMethod}</span>
           </p>
           <p>
-            <span className="first">CreditCardType:</span>
+            <span className="first">Credit Card Type:</span>
             <span className="second">{profile.CreditCardType}</span>
           </p>
           <p>
-            <span className="first">CreditCardNumber:</span>
+            <span className="first">Credit Card Number:</span>
             <span className="second">{profile.CreditCardNumber}</span>
           </p>
           <p>

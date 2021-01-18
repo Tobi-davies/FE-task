@@ -5,7 +5,7 @@
 }
 .singlecard {
   background: #fff;
-  width: 60%;
+  width: 600px;
   margin: auto;
   padding: 20px;
   border-radius: 8px;
@@ -25,5 +25,18 @@
   align-items: center;
   justify-content: center;
   margin-left: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+@media(max-width: 800px){
+  .singlecard {
+  width: 400px;
+}
+}
+
+@media(max-width: 650px){
+  .singlecard {
+  width: 90%;
+}
 }
