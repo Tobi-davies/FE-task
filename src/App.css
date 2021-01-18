@@ -5,8 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
-  /* background-color: #2d4859; */
-  /* background: hsl(0, 0%, 98%); */
+
 }
 
 a {
@@ -17,12 +16,10 @@ li {
   list-style: none;
 }
 .App {
-  /* background-color: #2d4859; */
+  
   position: relative;
-  background: hsl(207, 26%, 17%);
+  /* background: hsl(207, 26%, 17%); */
   background: hsl(0, 0%, 98%);
-
-  /* overflow-y: scroll; */
 }
 .search-and-filter-container {
   background: hsl(207, 26%, 17%);
@@ -39,7 +36,13 @@ li {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* grid-gap: 3%; */
   padding: 30px 0;
   grid-column-gap: 3%;
+}
+
+@media(max-width: 1000px){
+  .profile-posts {
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 3%;
+ }
 }

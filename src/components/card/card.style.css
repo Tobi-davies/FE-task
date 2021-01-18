@@ -1,10 +1,11 @@
 .card {
   background: #78abbf;
   margin-bottom: 20px;
-  /* background: hsl(208, 42%, 25%) !important; */
-  background: hsl(0, 0%, 100%);
+   /* background: hsl(207, 26%, 17%);
+   color: #fff; */
+  background: hsl(0, 0%, 100%) !important;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  padding: 10px;
+  padding: 15px;
   border-radius: 8px;
   font-size: 1.1rem;
   /* position: relative; */
