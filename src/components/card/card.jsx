@@ -14,10 +14,14 @@ const Card = ({ post, addProfile, history }) => {
           {post.FirstName} {post.LastName}
         </span>
       </p>
-      <p className="email">
+      <p>
+            <span className="first">UserName:</span>
+            <span className="second">{post.UserName}</span>
+          </p>
+      {/* <p className="email">
         <span className="first">Email: </span>
         <span className="second">{post.Email}</span>
-      </p>
+      </p> */}
       <p className="gender">
         <span className="first">Gender: </span>
         <span className="second">{post.Gender}</span>
