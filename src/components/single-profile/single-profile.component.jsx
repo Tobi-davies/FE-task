@@ -9,14 +9,14 @@ const SingleProfile = ({ profile }) => {
   if (profile === null) {
     return (
       <Link to="/">
-        <div>GO TO HOMEPAGE</div>
+        <div> <i className="fas fa-arrow-left"></i>GO TO HOMEPAGE</div>
       </Link>
     );
   } else {
     return (
       <div className="single-profile">
         <Link to="/">
-          <p className="back">Back</p>
+          <p className="back"><i className="fas fa-arrow-left"></i>Back</p>
         </Link>
 
         <div className="singlecard">

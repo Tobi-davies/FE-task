@@ -27,16 +27,20 @@
   margin-left: 30px;
   margin-bottom: 30px;
   border-radius: 10px;
+  color: #000;
+}
+.fa-arrow-left{
+margin-right:3px;
 }
 
 @media(max-width: 800px){
   .singlecard {
   width: 400px;
-}
+ }
 }
 
 @media(max-width: 650px){
-  .singlecard {
+.singlecard {
   width: 90%;
-}
+ }
 }
