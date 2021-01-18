@@ -9,16 +9,17 @@
   align-items: center;
 }
 
-.page-link a {
+.page-link {
   border: 3px solid #1a3873;
   padding: 5px 10px;
   margin: 2px;
   color: #1a3873;
   border-radius: 50%;
   color: black;
+  cursor:pointer;
 }
-.page-link a:focus,
-.page-link a:active,
+.page-link:focus,
+.page-link:active,
 .prev:focus {
   border: 3px solid #d92546;
 }

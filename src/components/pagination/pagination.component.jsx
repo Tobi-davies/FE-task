@@ -67,8 +67,8 @@ const Pagination = ({ pageLimit, newLength, paginate, currentPage }) => {
         ""
       )}
       {pageNumbers.map((num) => (
-        <li key={num} className="page-link">
-          <a onClick={() => paginate(num)}>{num}</a>
+        <li key={num} className="page-link" onClick={() => paginate(num)}>
+          {num}
         </li>
       ))}
 
