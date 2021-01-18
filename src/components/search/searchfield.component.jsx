@@ -3,7 +3,6 @@ import "./searchfield.styles.css";
 
 const SearchField = ({ updateSearchfield }) => {
   const inputHandler = (e) => {
-    // onChange={e => ({ searchField: e.target.value})
     console.log(e.target.value);
     updateSearchfield(e.target.value);
   };

@@ -1,7 +1,6 @@
 .search-field {
   display: flex;
   flex-direction: column;
-  /* background: hsl(207, 26%, 17%); */
 }
 .search-field .search {
   color: #fff;
